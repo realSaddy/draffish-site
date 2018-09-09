@@ -54,3 +54,32 @@ nav div hr {
 #songs div iframe {
     max-width: 901px;
 }
+
+.disabled {
+    display: none !important;
+}
+.buttoni {
+    animation-name: colorhoveroff;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+.buttoni:hover {
+    animation-name: colorhover;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+.point:hover {
+    cursor:pointer;
+    pointer-events: auto;
+}
+
+@keyframes colorhover {
+    from {background-color: #FFF7F8;}
+    to {background-color: #b7ffe2;}
+}
+@keyframes colorhoveroff {
+    from {background-color: #b7ffe2;}
+    to {background-color: #FFF7F8;}
+}
