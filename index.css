@@ -1,0 +1,56 @@
+body {
+    background-color: #FFF7F8;
+    font-family: 'Quicksand', sans-serif;
+    padding-right: 9em;
+    padding-left: 9em;
+}
+
+nav div div button {
+    border: none;
+    background: none;
+    outline: none;
+    color: #ffc2ea;
+    text-align: center;
+    text-shadow: -1px 0 lightgrey, 0 1px lightgrey, 1px 0 lightgrey, 0 -1px lightgrey;
+    font-size: 38px;
+    height: 100%;
+    width: 33%;
+}
+@media only screen and (min-width: 1576px) {
+    nav div div {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+@media only screen and (max-width: 760px) {
+    nav div div {
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    nav div div button {
+        margin: auto;
+    }
+}
+nav div div {
+    display: flex;
+    justify-content: center;
+}
+
+nav div hr {
+    display:block;
+    border:none;
+    color:#FFF7F8;
+    min-width: 160px;
+    height:1px;
+    background:black;
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#000), to(#FFF7F8));
+}
+#songs {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#songs div iframe {
+    max-width: 901px;
+}
